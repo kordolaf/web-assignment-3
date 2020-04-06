@@ -1,1 +1,31 @@
 /* font-family: 'Source Sans Pro', sans-serif; */
+/* General styling - Includes flex commands*/
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* Backgrounds */
+
+body{
+    background-color: #ebebeb;
+}
+
+.banner{
+    background-image: url(../img/banner-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Typography - Font Families, Sizes, Weights Stylings */
+
+li{
+    text-transform: capitalize;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
