@@ -1,23 +1,66 @@
 /* font-family: 'Source Sans Pro', sans-serif; */
 /* General styling - Includes flex commands*/
 
+.flex-container{
+    display: flex;
+}
+
 ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-/* Backgrounds */
-
 body{
+    background-color: #2d2d2d;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    padding: 27px 21px 0;
+}
+
+.header-links{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-links div:first-child{
+    padding-top: 7px;
+    margin: auto 20px auto 14px;
+    align-self: center;
+}
+
+.toggle-menu{
+    margin-top: 16px;
+}
+
+.toggle-menu span{
+    height: 5px;
+    width: 35px;
+    background-color: #6017a3;
+    display: block;
+}
+
+.toggle-menu span:nth-child(2){
+    margin: 6px 0;
+}
+
+header, .team, .cards{
     background-color: #ebebeb;
 }
 
 .banner{
     background-image: url(../img/banner-bg-mobile.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 400px 200px;
+    text-align: center;
+    height: 200px;
+    color: #fff;
+    line-height: 30px;
+    padding: 53px 44px 0px;
 }
+
 
 /* Typography - Font Families, Sizes, Weights Stylings */
 
@@ -28,4 +71,24 @@ li{
 a{
     color: #000;
     text-decoration: none;
+}
+header h1 a{
+    color: #6017a3;
+    font-weight: 900;
+    font-size: 56.82px;
+    line-height: 46.59px;
+}
+
+header p{
+    font-style: italic;
+    color: #7d7d7d;
+}
+
+.banner h2{
+    font-size: 31px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+.banner p{
+    font-size: 1.25rem;
 }
