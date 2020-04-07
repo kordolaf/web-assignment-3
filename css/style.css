@@ -17,10 +17,6 @@ body{
     color: #fff;
 }
 
-/* header{
-    padding: 27px 21px 0;
-} */
-
 .header-links{
     justify-content: space-between;
     align-items: flex-start;
@@ -48,8 +44,13 @@ body{
     margin: 6px 0;
 }
 
-header, .team, .cards{
-    background-color: #ebebeb;
+header, .teams, .card{
+    background-color: #ebebeb;  
+}
+
+section{
+    padding: 0 1.25rem;
+    
 }
 
 .banner{
@@ -61,6 +62,39 @@ header, .team, .cards{
     color: #fff;
     line-height: 30px;
     padding: 53px 44px 0px;
+}
+
+.cards{
+    flex-direction: column;
+}
+
+.teams{
+    padding-top: 57px;
+    text-align: center;
+    line-height: 22px;
+    color: #7b7b7b;
+}
+
+.teams>div{
+    margin-top: 25px;
+}
+
+.team h3{
+    margin-top: 33px;
+}
+
+.teams p{
+    margin-top: 1.125rem;
+}
+
+.team{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.team > div{
+    width: 165px;
 }
 
 /* Menu Styling */
@@ -134,5 +168,14 @@ header p{
     margin-bottom: 14px;
 }
 .banner p{
+    font-size: 1.25rem;
+}
+
+.teams h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.team h3{
     font-size: 1.25rem;
 }
