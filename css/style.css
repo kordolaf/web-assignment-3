@@ -14,15 +14,17 @@ ul{
 body{
     background-color: #2d2d2d;
     font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
 }
 
-header{
+/* header{
     padding: 27px 21px 0;
-}
+} */
 
 .header-links{
     justify-content: space-between;
     align-items: flex-start;
+    padding: 26px 20px;
 }
 
 .header-links div:first-child{
@@ -32,7 +34,7 @@ header{
 }
 
 .toggle-menu{
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .toggle-menu span{
@@ -59,6 +61,48 @@ header, .team, .cards{
     color: #fff;
     line-height: 30px;
     padding: 53px 44px 0px;
+}
+
+/* Menu Styling */
+
+nav ul{
+    flex-direction: column;
+}
+nav li{
+    background-image: linear-gradient(#fefefe, #eeeeef);
+    border-bottom: 1px solid #d4d4d4;
+}
+
+nav li:last-of-type{
+    border-bottom: 5px solid #6017a3;
+}
+
+nav li:hover{
+    cursor: pointer;
+    background-image: linear-gradient(#fff, #ddddde);
+}
+
+nav a{
+    display: block;
+    line-height: 3.75rem;
+}
+
+nav img{
+    display: inline-block;
+    margin: 0 1.5rem 0 1rem;
+    vertical-align: middle;
+}
+
+nav{
+    position: absolute;
+    width: 100vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+}
+
+.show-nav{
+    max-height: 30rem;
 }
 
 
