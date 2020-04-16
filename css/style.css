@@ -22,8 +22,11 @@ body{
     align-items: flex-start;
     padding: 26px 20px;
 }
+.header-links>div{
+    align-items: flex-start;
+}
 
-.header-links div:first-child{
+.header-links div div:first-child{
     padding-top: 7px;
     margin: auto 20px auto 14px;
     align-self: center;
@@ -60,7 +63,7 @@ header, .teams, .cards{
     padding: 53px 0px 0px;
 }
 
-.cards{
+.cards > .container{
     flex-direction: column;
     padding: 0 1.25rem;
 }
@@ -83,8 +86,6 @@ header, .teams, .cards{
 
 .teams p{
     margin-top: 1.125rem;
-}
-.team p{
     margin-bottom: 30px;
 }
 
@@ -95,7 +96,7 @@ header, .teams, .cards{
 }
 
 .team > div{
-    width: 165px;
+    flex-basis: 47%;
 }
 
 .sell-points{
@@ -138,19 +139,19 @@ header, .teams, .cards{
     background-image: url(../img/screen-bg-mobile.png);
     background-repeat: no-repeat;
     background-size: 385px 294px;
-    background-position: 15px 24px;
+    background-position: center top 24px;
     height: 319px;
     text-align: center;
 }
 
-.simple-beginning>h2{
+.simple-beginning h2{
     padding-top: 189px;
     padding-left: 59px;
     padding-right: 35px;
     font-weight: 300;
     font-size: 25px;
 }
-.simple-beginning>p{
+.simple-beginning p{
     padding: 0 59px 0 35px;
 }
 
@@ -212,18 +213,23 @@ footer ul{
     justify-content: space-between;
 }
 
+footer ul:first-of-type{
+    margin-top: 37px;
+    margin-bottom: 1.25rem;
+}
+
 footer ul:first-of-type li{
     border-bottom: 0.25rem solid #914dcf;
     padding-bottom: 10px;
 }
 
 footer ul:last-of-type{
+    margin-top: 34px;
     padding: 0 25px;
 }
 
 footer ul:last-of-type a{
     align-items: center;
-
     font-size: 0.75rem;
     font-weight: bold;
 }
@@ -319,12 +325,12 @@ header p{
     font-size: 25px;
 }
 
-footer>p:first-of-type{
+.footer-left-col>p{
     line-height: 1.5rem;
     font-size: 1rem;
     margin-bottom: 34px;
 }
-footer>p:last-of-type{
+.footer-right-col p{
     line-height: 1.5rem;
     font-size: 1rem;
     margin-top: 1.25rem;
@@ -338,7 +344,7 @@ footer>p:last-of-type{
 }
 
 .footer-header h2{
-    font-weight: bold;
+    font-weight: 900;
     font-size: 39px;
     line-height: 32px;
 }
@@ -426,6 +432,150 @@ footer a{
 
     .team > div{
         flex-basis: 49%;
-        width: auto;
+    }
+
+    .team h3{
+        font-size: 39px;
+    }
+
+    .cards>.container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{
+        flex-basis: 48%;
+    }
+    .card:last-of-type{
+        flex-basis: 100%;
+    }
+
+    footer{
+        padding: 3rem 1.25rem 54px;
+    }
+
+    .footer-header{
+        margin-bottom: 31px;
+    }
+
+    footer>div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-left-col
+    {
+        flex-basis: 44%;
+    } 
+    .footer-right-col{
+        flex-basis: 51%;
+    }
+
+    .footer-left-col p{
+        margin: 0;
+    }
+
+    .footer-right-col{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-right-col ul:first-of-type{
+        margin: 0;
+    }
+    .footer-right-col ul:last-of-type{
+        order: 2;
+        padding: 0;
+        width: 79.5%;
+    }
+    .footer-right-col p:last-of-type{
+        order:3;
+    }
+}
+
+@media only screen and (min-width: 1140px){
+    .container{
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    header{
+        padding-bottom: 110px;
+    }
+
+    .menu{
+        position: absolute;
+    }
+
+    .banner{
+        background-image: url(../img/banner-bg-desktop.jpg);
+        height: 552px;
+    }
+
+    .sell-points>div:first-child{
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .sell-points>div:first-child div{
+        flex-basis: 48.68%;
+    }
+
+    .sell-points>div:first-child h2{
+        font-size: 48px;
+    }
+    .sell-points>div:first-child p{
+        font-size: 31px;
+    }
+
+    .sell-points picture{
+        flex-basis: 51.3%;
+    }
+
+    .sell-points>div:last-child{
+        justify-content: space-between;
+    }
+
+    .sell-points>div:last-child img{
+        margin: 0 auto;
+        margin-bottom: 47px;
+    }
+
+    .sell-points>div:last-child>.flex-container{
+        flex-direction: column;
+    }
+    .sell-points>div:last-child>.flex-container{
+        flex-basis: 31.7%;
+    }
+
+    .team>div{
+        flex-basis: 23%;
+    }
+
+    .team h3{
+        font-size: 31px;
+    }
+
+    .cards>.container{
+        padding: 0;
+    }
+
+    .card:last-of-type{
+        margin-bottom: 70px;
+    }
+    .card{
+        flex-basis: 31.5%;
+        margin-bottom: 70px;
+    }
+    .card:last-of-type{
+        flex-basis: 31.5%;
+    }
+
+    .footer-right-col{
+        flex-basis: 42.8%;
+    }
+
+    .footer-right-col ul:last-of-type{
+        width: 62.2%;
     }
 }
